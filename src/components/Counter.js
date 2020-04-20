@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 class Counter extends React.Component {
     render () {
         return (
-            <div>
-                <h1>Hello from Counter app</h1>
+            <div className="page-container">
+                <h1>Counter App</h1>
+
+                <ul>
+                    <li><button>-</button></li>
+                    <li>display counter</li>
+                    <li><button>+</button></li>
+                </ul>
             </div>
         )
     }
