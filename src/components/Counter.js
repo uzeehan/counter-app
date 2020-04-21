@@ -27,7 +27,7 @@ class count extends React.Component {
     render () {
         return (
             <div className="page-container">
-                <h1>count App</h1>
+                <h1>Counter App</h1>
 
                 <ul>
                     <li><button name="minusBtn" onClick={this.onClickMinusBtn}>-</button></li>
