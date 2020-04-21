@@ -1,25 +1,25 @@
 import React, { Fragment } from 'react';
 
-class Counter extends React.Component {
+class count extends React.Component {
 
     constructor(probs) {
         super(probs);
 
         this.state = {
-            counter: 15
+            count: 15
         }
     }
 
     onClickPlusBtn = () => {
         this.setState({
-            counter: this.state.counter + 1
+            count: this.state.count + 1
         })
         console.log('clicked btn +');
     }
 
     onClickMinusBtn = () => {
         this.setState({
-            counter: this.state.counter - 1
+            count: this.state.count - 1
         })
         console.log('clicked btn -');
     }
@@ -27,11 +27,11 @@ class Counter extends React.Component {
     render () {
         return (
             <div className="page-container">
-                <h1>Counter App</h1>
+                <h1>count App</h1>
 
                 <ul>
                     <li><button name="minusBtn" onClick={this.onClickMinusBtn}>-</button></li>
-                    <li>{ this.state.counter }</li>
+                    <li><p>{ this.state.count }</p></li>
                     <li><button name="plusBtn" onClick={this.onClickPlusBtn}>+</button></li>
                 </ul>
             </div>
@@ -39,4 +39,4 @@ class Counter extends React.Component {
     }
 }
 
-export default Counter;
+export default count;
